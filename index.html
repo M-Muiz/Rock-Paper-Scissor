@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock,Paper & Scissor</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section class="container">
+        <div class="result_field">
+          <div class="score">
+
+            <span>user : <span id="u-Score">0</span> </span>
+            <span>Cpu : <span id="c-Score">0</span></span>
+          </div>
+          <div class="result_images">
+            <span class="user_result">
+              <img id="userImage" src="css/images/large-rock.png" alt="" />
+            </span>
+            <span class="cpu_result">
+              <img id="cpuImage" src="css/images/large-rock.png" alt="" />
+            </span>
+          </div>
+          <div class="result">Let's Play!!</div>
+        </div>
+        <div class="option_images">
+          <span onclick="userClick(this)" class="option_image">
+            <img src="css/images/rock.png" alt="" />
+            <p>Rock</p>
+          </span>
+          <span onclick="userClick(this)" class="option_image">
+            <img src="css/images/paper.png" alt="" />
+            <p>Paper</p>
+          </span>
+          <span  onclick="userClick(this)" class="option_image">
+            <img src="css/images/scissor.png" alt="" />
+            <p>Scissor</p>
+          </span>
+        </div>
+      </section>
+
+<script src="./java/app.js"></script>
+</body>
+</html>
